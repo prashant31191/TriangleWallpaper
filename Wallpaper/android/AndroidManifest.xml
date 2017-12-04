@@ -47,7 +47,9 @@
             android:name="com.mopub.mobileads.RewardedMraidActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />-->
 
-        <activity
+       <!-- aaa
+
+       <activity
             android:name="com.mopub.mobileads.MoPubActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
@@ -61,7 +63,7 @@
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
             android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize" />
+            android:configChanges="keyboardHidden|orientation|screenSize" />-->
 
 
 

@@ -135,10 +135,12 @@ dependencies {
         exclude module: 'moat-mobile-app-kit' // To exclude Moat
     }*/
 
+    /*
+    111
     compile('com.mopub:mopub-sdk:4.18.0@aar') {
         transitive = true
         exclude module: 'moat-mobile-app-kit' // To exclude Moat
-    }
+    }*/
 
     /*// For rewarded videos. This will automatically also include interstitials
     compile('com.mopub:mopub-sdk-rewardedvideo:4.18.0@aar') {

@@ -1,22 +1,18 @@
 package com.trianglewallpaper;
 
+import android.app.Activity;
 import android.app.WallpaperManager;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.app.Activity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.mopub.mobileads.MoPubErrorCode;
-import com.mopub.mobileads.MoPubInterstitial;
-import com.mopub.mobileads.MoPubView;
-
 public class MainActivity extends Activity {
-    private MoPubInterstitial mInterstitial;
+    //private MoPubInterstitial mInterstitial;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +39,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        MoPubView moPubView = (MoPubView) findViewById(R.id.adview);
+     /*   MoPubView moPubView = (MoPubView) findViewById(R.id.adview);
         moPubView.setAdUnitId("81c07473bba14ae4b97c1f755397d8af"); // Enter your Ad Unit ID from www.mopub.com
         moPubView.loadAd();
 
@@ -102,7 +98,7 @@ public class MainActivity extends Activity {
             public void onBannerCollapsed(MoPubView banner) {
                 showLog("=======onBannerCollapsed====");
             }
-        });
+        });*/
     }
 
     private void showLog(String m1)

@@ -55,7 +55,7 @@
 
 
 
-    <com.mopub.mobileads.MoPubView
+   <!-- <com.mopub.mobileads.MoPubView
         android:id="@+id/adview"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
         android:minHeight="60dp"
         android:layout_alignParentBottom="true"
         android:background="#5b30"
-        />
+        />-->
 
 
 </RelativeLayout>
