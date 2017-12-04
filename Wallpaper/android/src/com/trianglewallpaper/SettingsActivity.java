@@ -42,7 +42,7 @@ public class SettingsActivity extends PreferenceActivity implements SharedPrefer
                 }
             }
         }catch (Throwable t){}
-        getPreferenceManager().setSharedPreferencesName("MuhTriangles");
+        getPreferenceManager().setSharedPreferencesName("TriangleWallpaper");
         addPreferencesFromResource(R.xml.pref_general);
         getPreferenceManager().getSharedPreferences().registerOnSharedPreferenceChangeListener(
                 this);

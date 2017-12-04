@@ -118,20 +118,25 @@ repositories {
 dependencies {
     compile 'com.android.support:support-v4:27.0.0'
     compile 'com.google.android.gms:play-services-ads:8.1.0'
+    compile "com.android.support:support-compat:27.0.0"
 
 
-
-    // For banners
+   /* // For banners
     compile('com.mopub:mopub-sdk-banner:4.18.0@aar') {
         transitive = true
         exclude module: 'libAvid-mopub' // To exclude AVID
         exclude module: 'moat-mobile-app-kit' // To exclude Moat
-    }
+    }*/
 
-    // For interstitials
+   /* // For interstitials
     compile('com.mopub:mopub-sdk-interstitial:4.18.0@aar') {
         transitive = true
         exclude module: 'libAvid-mopub' // To exclude AVID
+        exclude module: 'moat-mobile-app-kit' // To exclude Moat
+    }*/
+
+    compile('com.mopub:mopub-sdk:4.18.0@aar') {
+        transitive = true
         exclude module: 'moat-mobile-app-kit' // To exclude Moat
     }
 

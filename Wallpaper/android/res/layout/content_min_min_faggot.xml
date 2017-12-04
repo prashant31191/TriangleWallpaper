@@ -33,7 +33,7 @@
                 android:adjustViewBounds="true"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp"
-                android:src="@drawable/tfw"
+                android:src="@drawable/ic_warning_red_800_48dp"
                 android:background="#000000"
                 />
 

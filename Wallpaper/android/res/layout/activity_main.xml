@@ -5,27 +5,34 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.trianglewallpaper.MainActivity">
+    <ImageView
+        android:alpha="0.5"
+        android:src="@drawable/bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
 
 
     <TextView
-        android:text="@string/intro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/metal_mania"
         android:gravity="center"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+        android:text="@string/intro"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
 
     <TextView
-        android:text="@string/intro2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:layout_marginTop="70dp"
         android:layout_below="@+id/textView"
-        android:gravity="center"/>
+        android:layout_marginTop="70dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/intro2" />
 
     <Button
         android:id="@+id/button"
@@ -51,8 +58,11 @@
     <com.mopub.mobileads.MoPubView
         android:id="@+id/adview"
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+
+        android:minHeight="60dp"
         android:layout_alignParentBottom="true"
+        android:background="#5b30"
         />
 
 

@@ -31,7 +31,7 @@ public class LiveWallpaper extends AndroidLiveWallpaperService{
         config.useWakelock = false;
         config.useAccelerometer = false;
         config.getTouchEventsForLiveWallpaper = true;
-        config.numSamples=getSharedPreferences("MuhTriangles", MODE_PRIVATE).getBoolean("antialiasing", true)?2:0;
+        config.numSamples=getSharedPreferences("TriangleWallpaper", MODE_PRIVATE).getBoolean("antialiasing", true)?2:0;
 
         final LWP listener = new LWP();
         initialize(listener, config);
@@ -49,7 +49,7 @@ public class LiveWallpaper extends AndroidLiveWallpaperService{
         public void resume(){
             super.resume();
             readBattery();
-            if(isPreviewing||getSharedPreferences("MuhTriangles", MODE_PRIVATE).getString("hueMode","c0").charAt(0)=='r') readPrefs();
+            if(isPreviewing||getSharedPreferences("TriangleWallpaper", MODE_PRIVATE).getString("hueMode","c0").charAt(0)=='r') readPrefs();
         }
 
         @Override
@@ -77,7 +77,7 @@ public class LiveWallpaper extends AndroidLiveWallpaperService{
         }
 
         private void readPrefs(){
-            SharedPreferences sp = getSharedPreferences("MuhTriangles", MODE_PRIVATE);
+            SharedPreferences sp = getSharedPreferences("TriangleWallpaper", MODE_PRIVATE);
             boolean gradientMode=sp.getBoolean("gradientMode", true);
             int gradientSubtle=Integer.parseInt(sp.getString("gradientSubtle", "1"));
             int gradientType=Integer.parseInt(sp.getString("gradientType", "5"));
